@@ -1,0 +1,28 @@
+// Difference between String and String Buffer 
+class Main{
+    public static void main(String []args){
+     //String
+     // 1.String are immutable(the length of String is not changeable)
+     String s = new String("durga");
+      s.concat("software");
+      System.out.println(s);
+      // String buufer 
+      // 1.String are mutable(the length of String is changeable) 
+      StringBuffer sb = new StringBuffer("durga");
+      sb.append("software");
+      System.out.println(sb);
+      // String
+      // 2.== this compare refeence of variable 
+      String s1 = new String("hello");
+      String s2 = new String("hello");
+      System.out.println("String is what"+s1==s2);
+      // 3.s1.equals(s2) this method is used for compare the value
+      System.out.println("String is what"+s1.equals(s2));
+      // StringBuffer
+      //.String are not capable in equal method 
+      StringBuffer sb1 = new StringBuffer("marker");
+      StringBuffer sb2 = new StringBuffer("marker");
+      System.out.println(sb1 == sb2);
+      // System.out.println("StringBuffer are is"+sb1.equals(sb1));
+    }
+}
