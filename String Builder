@@ -1,0 +1,23 @@
+// This is the program of String builder
+class Main{
+    public static void main(String[] args){
+        StringBuilder sb = new StringBuilder("Tony");
+        System.out.println(sb);
+        //sb.charAt()
+        System.out.println(sb.charAt(0));
+        // set another value at old position
+        sb.setCharAt(0,'p');
+        System.out.println(sb);
+        // insert another value to the in a String 
+        sb.insert(0,'S');
+        System.out.println(sb);
+        // delete extra value 
+        sb.delete(0,1);
+        System.out.println(sb);
+        // append is a way to adding a value in a String at the end
+        sb.append("p");
+        System.out.println(sb) ;
+        // sb.length is used for calculate the length of a String 
+        System.out.println(sb.length());
+    }
+    }
