@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int del = sc.nextInt();
+        int a[] = new int[n];
+        // Enter the element in an Array
+        for(int i=0; i<n; i++){
+            a[i]= sc.nextInt();
+        }
+        // make a logic for deletion
+        for(int i=0; i<n; i++){
+          if(del==a[i]){
+              for(int j=i; j<n-1;i++){
+                  a[j]=a[j+1];
+              }
+              break;
+          }
+        }
+        // Output of Matrix
+         System.out.println(Arrays.toString(a));
+        
+    }
