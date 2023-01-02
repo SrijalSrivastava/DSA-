@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main{
+    // String program 2
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String S = sc.nextLine();
+        if(S.equals("hydrabad")){
+            System.out.print("Hello Hydrabad ");
+        }
+        else if(S.equals("CHENNIA")){
+            
+            System.out.println("This is Chennia");
+        }
+        else{
+            System.out.println("there is no matching ");
+        }
+    } 
+}
