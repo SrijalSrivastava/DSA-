@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String []args){
+       Scanner sc = new Scanner(System.in);
+       String S = sc.next();
+       String S2 = S.toUpperCase();// convert the lower case into uper case
+       System.out.println(S2);
+       String S3 = S.toLowerCase(); // covert the upper case into lower case 
+       System.out.println(S3);
+       System.out.println(S==S2);
+       System.out.println(S==S3);
+    }
+}
