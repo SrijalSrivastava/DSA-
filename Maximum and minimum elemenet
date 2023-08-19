@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int []a = new int[n];
+
+        // Enter the Element in Array 
+
+        for(int i=0; i<=n-1; i++){
+            a[i] = sc.nextInt();
+        }
+        
+        // Make a logic for 
+
+        int max =0 ; 
+
+        for(int i=0; i<=n-1; i++){
+            if(max<a[i]){
+                max = a[i];
+            }
+        }
+            System.out.println(max);
+    
+        int min =999;
+
+        for(int i=0; i<=n-1; i++){
+            if(min>a[i]){
+                min = a[i];
+            }
+        }
+        System.out.println(min);
+   
+
+
+    }
+}
