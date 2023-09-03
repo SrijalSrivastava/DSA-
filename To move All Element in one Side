@@ -1,0 +1,36 @@
+// Write a program to move all the negative Element in One Side 
+import java.util.Scanner;
+class Main{
+    public static void main(String []args){
+     Scanner sc = new Scanner(System.in);
+     int n = sc.nextInt();
+     int a[] = new int[n];
+     int t[] = new int[a.length];
+
+     // Enter the Element in an Array
+     for(int i=0; i<=n-1; i++){
+         a[i] = sc.nextInt();
+     }
+
+     // Make a logic
+     int j=0;
+    for(int i=0; i<=n-1; i++){
+        if(a[i]>=0){
+            t[j++] = a[i];
+        }
+    }
+
+    for(int i=0; i<=n-1; i++){
+        if(a[i]<0){
+            t[j++] = a[i];
+        }
+    }
+
+    
+     for(int i=0; i<=n-1; i++){
+         a[i] = t[i];
+         System.out.print(a[i] + " ");
+     }
+
+    }
+}
