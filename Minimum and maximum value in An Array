@@ -1,0 +1,40 @@
+import java.util.Scanner; 
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int []a = new int[n];
+        int min =0; 
+        int max = 0;
+
+        // Enter the Elemenet in an Array 
+        for(int i=0; i<=n-1; i++){
+            a[i] = sc.nextInt();
+        }
+
+        //make logic for 
+        min = a[0];
+        max = a[0];
+        for(int i=0; i<=n-1; i++){
+            // make logic for Minimum 
+            if(min>a[i]){
+                min = a[i];
+            }
+
+           // make logic for Maximum 
+           if(max<a[i]){
+               max = a[i];
+           }
+            
+        
+        }
+        
+            System.out.println(min);
+            System.out.println(max);
+
+        // Output An array 
+        for(int i=0; i<=n-1; i++){
+            System.out.print(a[i] + " ");
+        }
+    }
+}
