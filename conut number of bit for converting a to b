@@ -1,0 +1,23 @@
+// how many bit filled for converting a to b 
+import java.util.Scanner;
+public class Main {
+    // Newton School Online Java compiler to run Java online.
+    // Write Java code in this online editor and run it.
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int val = a^b;
+        int c =0;
+        while(val!=0){
+            if((val&1)==1){
+                c++;
+            }
+                val = val>>1;
+            
+            
+        }
+        System.out.println(c);
+    }
+}
