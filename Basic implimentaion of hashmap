@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.util.HashMap;
+public class Main {
+    // Newton School Online Java compiler to run Java online.
+    // Write Java code in this online editor and run it.
+    public static void main(String[] args) {
+        //Scanner sc = new Scannner(System.in);
+          HashMap<String,Integer>map = new HashMap<>();
+
+          //Intsertion 
+          map.put("India", 100);
+          map.put("china", 50);
+          map.put("Bangladesh" , 200);
+       //   map.put("China", 80);
+          System.out.println(map);
+          map.put("china",150);
+          System.out.println(map);
+
+          // for check any key present in an map or not for this function : map.containsKey();
+         if(map.containsKey("china")){
+             System.out.println("The key is present in a map");
+         }
+
+         else{
+             System.out.println("the ky is present in an Map");
+         }
+ // Map.get : It is used to gives the value of key 
+         System.out.println(map.get("china")); 
+    }
+}
