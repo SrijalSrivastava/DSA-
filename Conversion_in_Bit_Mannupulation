@@ -1,0 +1,54 @@
+// Convert Binary to Decimal
+public class Binary_Convert_Decimal {
+    public static void main(String[] args) {
+
+        int n = 110;
+        double ans = 0;
+        int i=0;
+        while(n>0){
+            int digit = n%10;
+            if(digit == 1){
+                ans = ans + Math.pow(2,i);
+            }
+            n=n/10;
+            i++;
+        }
+        System.out.println(ans);
+    }
+}
+
+// 2. Convert Decimal to binary 
+public class Convert_any_number_into_binary {
+    public static void main(String[] args) {
+
+        int n = 10;
+        double ans =0;
+        int i=0;
+
+        while(n>0){
+            int digit = n&1;
+            ans = digit*Math.pow(10,i)+ ans;
+            n = n>>1;
+            i++;
+        }
+        System.out.println(ans);
+    }
+}
+
+
+// 3 convert decimal to octal 
+public class Convert_Decimal_Octal {
+    public static void main(String[] args) {
+        int n = 12;
+        int sum =0;
+
+        while(n>0){
+            int rem = n%8;
+             sum = rem +sum;
+             n = n/8;
+        }
+        System.out.println(sum);
+
+    }
+}
+.
